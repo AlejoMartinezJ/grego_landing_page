@@ -83,3 +83,9 @@
     max-width: 300px;
   }
 }
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 260px;
+  }
+}
