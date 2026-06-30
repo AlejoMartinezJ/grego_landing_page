@@ -1,0 +1,30 @@
+.analogies-section {
+  position: relative;
+}
+
+.analogies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.analogy-card {
+  flex: 1 1 calc(33.333% - 24px);
+  min-width: 280px;
+  text-align: left;
+}
+
+.analogy-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.analogy-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
