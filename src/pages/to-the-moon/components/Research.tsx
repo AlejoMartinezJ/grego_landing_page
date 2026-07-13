@@ -8,7 +8,7 @@ const Research: React.FC = () => {
       <div className="container">
         <h2>Fundamento académico</h2>
         <div className="research-intro">
-          <p>Grego nace en la intersección de la ingeniería de sistemas, la investigación operativa y la resiliencia urbana. Su diseño está informado por el Marco de Sendai para la Reducción del Riesgo de Desastres (UNDRR), los sistemas de alerta temprana multirriesgo del BID para LAC, el caso SIATA Medellín como referente técnico en crowdsourcing de crisis, e influencia del Grupo para el Manejo de Crisis y Desastres (CID, PUCP).</p>
+          <p>Grego nace en la intersección de la resiliencia urbana y la ingeniería de sistemas, poniendo énfasis en el concepto de "redes sociales hiperlocales". Su diseño está informado por investigación en sistemas de alerta temprana (UNDRR Sendai Framework), urban informatics, crowdsourcing de crisis y teoría de redes complejas aplicada a ciudades.</p>
         </div>
         
         <div className="whitepaper-box glass-panel">
@@ -17,6 +17,9 @@ const Research: React.FC = () => {
           </div>
           <h3>Un sistema de orquestación de información para la detección y respuesta temprana a eventos disruptivos urbanos</h3>
           <p className="coming-soon">Próximamente disponible para descarga.</p>
+          <button className="btn btn-secondary mt-4">
+            Notifícame cuando esté disponible <ArrowRight size={16} />
+          </button>
         </div>
         
         <div className="references-section">
@@ -27,7 +30,6 @@ const Research: React.FC = () => {
             <li>BID — Sistemas de Alerta Temprana Multirriesgo para LAC</li>
             <li>SIATA Medellín — Sistema de Alerta Temprana del Valle de Aburrá</li>
             <li>Ushahidi — Crowdsourced Crisis Mapping</li>
-            <li>CID PUCP — Grupo para el Manejo de Crisis y Desastres</li>
           </ul>
         </div>
       </div>

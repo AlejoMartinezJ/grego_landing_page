@@ -4,37 +4,36 @@ import './Roadmap.css';
 const Roadmap: React.FC = () => {
   const milestones = [
     {
-      title: 'MVP 1 — Comunidad hiperlocal',
-      status: 'En desarrollo',
-      desc: 'Mapa de puntos de interés, Lobby con anuncios, mercado, canales enlazados, directorio vecinal básico.',
-      success: 'Señal de éxito: comunidades activas con retorno orgánico semanal.'
+      title: 'Horizonte actual — Coordinación institucional de incidencias',
+      status: 'Hoy',
+      desc: 'Módulo configurable para digitalizar el flujo de atención ciudadana en municipalidades. Reporte → validación → asignación → seguimiento → cierre. El ciudadano como sensor de entrada. La municipalidad como coordinador. El sereno como ejecutor en campo.',
+      success: 'Caso validado: Alerta GAL, Municipalidad de Albarracín, Tacna. Primer lugar Hackatón Transformagob 2026.',
+      model: 'Modelo: SaaS B2G — suscripción mensual por municipio. Perú tiene 1,874 municipalidades.'
     },
     {
-      title: 'MVP 2 — Mercado local',
-      status: 'Próximamente',
-      desc: 'Tablón de anuncios georreferenciado en el mercado: vender, comprar, buscar, donar. Personas dispuestas a pagar por el servicio.',
-      success: 'Señal de éxito: primeras transacciones entre vecinos completadas.'
+      title: 'Horizonte próximo — Coordinación multilateral para eventos físicos',
+      status: 'En 3 años',
+      desc: 'El mismo mecanismo más allá de seguridad ciudadana. Servicios domiciliarios, logística de última milla, coordinación de voluntarios, empresas de servicios con terceros en campo. Cualquier organización con el patrón (múltiples actores + evento físico + sin canal común) es un cliente potencial.',
+      success: '',
+      model: 'Modelo: B2G + B2B.'
     },
     {
-      title: 'MVP 3 — Sensor ciudadano',
-      status: 'Horizonte',
-      desc: 'Reportes geolocalizados, validación cruzada, mapa de eventos en tiempo real, API para actores institucionales.',
-      success: 'Señal de éxito: eventos auto-confirmados en menos de 10 minutos.'
-    },
-    {
-      title: 'Visión a largo plazo — Grego 2.0',
-      status: 'Futuro',
-      desc: 'Middleware de resiliencia urbana: integración con sistemas de emergencia, serenazgo, municipios. Dashboard institucional.',
-      success: 'Red de ciudades resilientes.'
+      title: 'Horizonte a largo plazo — Red hiperlocal con inteligencia urbana',
+      status: 'Visión',
+      desc: 'La capa de datos acumulada se convierte en el activo real. Heatmaps de incidencias, patrones de demanda por zona, predicción de eventos, API para instituciones y empresas. La red hiperlocal emerge porque los ciudadanos ya están en Grego coordinando eventos — la comunidad es el subproducto de la coordinación.',
+      success: '',
+      model: 'Modelo: B2G + B2B + datos como producto.'
     }
   ];
 
   return (
     <section id="roadmap" className="roadmap-section">
       <div className="container">
-        <h2>Hacia dónde vamos</h2>
+        <h2>De la coordinación de eventos a la inteligencia urbana.</h2>
         <p className="section-subtitle">
-          Grego se construye en capas, de adentro hacia afuera. Primero la comunidad. Luego la economía local. Luego la inteligencia urbana.
+          Grego se construye en capas, cada una habilitando la siguiente.<br />
+          El orden importa: una plataforma para coordinación de eventos multilateral permite construir un tejido digital de la ciudad.<br />
+          Una red hiperlocal.
         </p>
         
         <div className="roadmap-timeline">
@@ -47,7 +46,8 @@ const Roadmap: React.FC = () => {
                   <span className="status-badge">{m.status}</span>
                 </div>
                 <p>{m.desc}</p>
-                <p className="success-signal"><strong>{m.success}</strong></p>
+                {m.success && <p className="success-signal" style={{ marginTop: '12px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}><strong>{m.success}</strong></p>}
+                <p style={{ marginTop: '8px', fontSize: '0.9rem', color: 'var(--primary-color)' }}>{m.model}</p>
               </div>
             </div>
           ))}

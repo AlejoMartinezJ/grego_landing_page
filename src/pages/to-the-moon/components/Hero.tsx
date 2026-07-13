@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 import './Hero.css';
 
 const Hero: React.FC = () => {
@@ -18,22 +18,22 @@ const Hero: React.FC = () => {
       
       <div className="container hero-content">
         <h1 className="hero-title">
-          La ciudad necesita una capa donde compartir el estado de sus eventos.<br />
-          <span className="text-gradient">Grego es esa capa.</span>
+          La ciudad, en tiempo real.<br />
+          <span className="text-gradient">Organizada por las personas que la viven.</span>
         </h1>
-        <p className="hero-subtitle" style={{ marginTop: '20px', marginBottom: '30px' }}>
-          Coordinación multilateral geolocalizada para eventos físicos.
+        <p className="hero-subtitle">
+          A living meta-layer over the city — built by citizens, for citizens.
         </p>
         <p className="hero-description">
-          Cuando ocurre un evento físico que involucra a más de dos actores — una emergencia, una instalación de servicios, una incidencia de seguridad — cada actor se comunica en su propio canal. Nadie ve el mismo estado. El tiempo se pierde en triangulación, no en resolución. Grego es esa capa que falta: el estado compartido que todos los actores pueden ver sin triangular.
+          Grego es una red hiperlocal que da a cada comunidad, barrio y lugar de la ciudad un espacio digital propio: un punto en el mapa donde encontrarse, organizarse e informarse. Una capa viva que refleja lo que ocurre en la ciudad, alimentada por quienes la habitan.
         </p>
         
         <div className="hero-actions">
           <a href="#about" className="btn btn-primary">
-            Conoce más <ArrowRight size={20} style={{ transform: 'rotate(90deg)' }} />
+            Conoce más <ArrowRight size={20} />
           </a>
-          <a href="#validated-case" className="btn btn-secondary">
-            Ver caso validado <ArrowRight size={20} />
+          <a href="#research" className="btn btn-secondary">
+            <FileText size={20} /> Leer el White Paper
           </a>
         </div>
       </div>

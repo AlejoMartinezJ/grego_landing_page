@@ -1,0 +1,27 @@
+.team-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.team-content p {
+  margin-bottom: 1.5rem;
+}
+
+.team-academic-note {
+  margin-top: 3rem;
+  padding: 24px;
+  text-align: left;
+  border-left: 4px solid var(--primary-color);
+}
+
+.team-academic-note p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.team-academic-note strong {
+  color: var(--text-primary);
+}

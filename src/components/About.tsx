@@ -1,59 +1,57 @@
 import React from 'react';
 import './About.css';
-import { MapPin, LayoutDashboard, Rss, Store, ShieldAlert, MessagesSquare } from 'lucide-react';
 
 const About: React.FC = () => {
+  const steps = [
+    {
+      num: '1.',
+      title: 'El evento ocurre.',
+      desc: 'Uno de los actores lo registra en Grego en segundos — ubicación, tipo, descripción mínima.'
+    },
+    {
+      num: '2.',
+      title: 'Grego genera un estado compartido del evento.',
+      desc: 'Ubicación, actores, metadata, historial. Accesible por enlace, QR o número de teléfono.'
+    },
+    {
+      num: '3.',
+      title: 'Se comparte. Todos los actores ven el mismo estado en tiempo real.',
+      desc: 'Sin preguntar. Sin llamar. Sin duplicar coordinación.'
+    },
+    {
+      num: '4.',
+      title: 'Cada actor continúa en su canal habitual.',
+      desc: 'Pero con el estado de Grego como referencia común. Grego es la capa de estado que WhatsApp no tiene.'
+    }
+  ];
+
   return (
     <section id="about" className="about-section">
       <div className="container">
-        <h2>Una meta-capa viva sobre la ciudad</h2>
+        <h2>Una plataforma de coordinación geolocalizada y multilateral para eventos físicos.</h2>
         <div className="about-intro">
-          <p>Grego es una plataforma móvil que organiza la actividad humana alrededor de los lugares y comunidades donde ocurre — no alrededor de personas individuales o algoritmos de engagement. Cada lugar, barrio, evento o comunidad es un <strong>punto de interés</strong>: su espacio digital propio con tablero de anuncios, mercado local, mapa de vigilancia y canales de comunicación enlazados.</p>
-        </div>
-        
-        <div className="abstraction-diagram">
-          <div className="diagram-step">
-            <div className="diagram-box main-box">
-              <MapPin size={32} className="diagram-icon" />
-              <h4>Lugar / Comunidad / Evento</h4>
-            </div>
-            <div className="diagram-arrow">↓</div>
-            <div className="diagram-box hotspot-box">
-              <h4>Punto de interés</h4>
-              <span>(Hotspot en el mapa)</span>
-            </div>
-            <div className="diagram-arrow">↓</div>
-            <div className="diagram-box lobby-box">
-              <LayoutDashboard size={24} className="diagram-icon-small" />
-              <h4>Lobby</h4>
-              <span>(panel de entrada)</span>
-            </div>
-            <div className="diagram-arrow">↓</div>
-            
-            <div className="diagram-grid">
-              <div className="diagram-module">
-                <Rss size={20} />
-                <span>Anuncios</span>
-              </div>
-              <div className="diagram-module">
-                <Store size={20} />
-                <span>Mercado</span>
-              </div>
-              <div className="diagram-module">
-                <ShieldAlert size={20} />
-                <span>Vigilancia</span>
-              </div>
-              <div className="diagram-module">
-                <MessagesSquare size={20} />
-                <span>Canales</span>
-              </div>
-            </div>
+          <p>Grego habilita a múltiples actores coordinar sobre múltiples eventos físicos — sin depender de un servicio específico, sin cambiar los canales que ya usan, compartiendo el estado del evento en tiempo real. No reemplaza WhatsApp ni las apps institucionales. Les da la capa de estado que les falta.</p>
+          <div className="glass-panel" style={{ padding: '24px', margin: '2rem 0', fontStyle: 'italic', color: 'var(--text-secondary)' }}>
+            <p>Shazam no reemplaza Spotify. Identifica la canción y te lleva a donde ya escuchas.</p>
+            <p>Grego no reemplaza WhatsApp ni los canales existentes. Registra el evento, le da estructura y estado, y cada actor lo lleva a donde se sigue comunicando.</p>
           </div>
         </div>
         
-        <div className="synthesis-quote">
-          <blockquote>
-            "Imagina Google Maps con un foro de Reddit en cada punto de interés. Eso es Grego."
+        <div className="stepper-container" style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '800px', margin: '0 auto' }}>
+          {steps.map((step, i) => (
+            <div key={i} className="glass-card stepper-card" style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+              <div style={{ fontSize: '32px', color: 'var(--primary-color)', lineHeight: 1 }}>{step.num}</div>
+              <div>
+                <h4 style={{ marginBottom: '8px', fontSize: '18px' }}>{step.title}</h4>
+                <p style={{ margin: 0, color: 'var(--text-secondary)' }}>{step.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="synthesis-quote" style={{ marginTop: '4rem' }}>
+          <blockquote style={{ fontSize: '1.8rem', fontWeight: 600, color: 'var(--primary-color)', lineHeight: 1.3 }}>
+            "Apúntalo en Grego. Ahí lo vamos revisando."
           </blockquote>
         </div>
       </div>

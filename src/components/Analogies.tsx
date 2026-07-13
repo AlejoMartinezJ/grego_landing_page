@@ -4,24 +4,24 @@ import './Analogies.css';
 const Analogies: React.FC = () => {
   const analogies = [
     {
-      title: 'Como Google Maps — pero con voz propia',
-      desc: 'Google Maps te dice dónde está un lugar. Grego te dice qué está pasando ahí, quién vive alrededor, qué necesitan y qué ofrecen.'
+      title: 'Como Google Maps con estado en cada punto',
+      desc: 'Google Maps te dice dónde está un lugar. Grego te dice qué está pasando ahí, quién está atendiendo, en qué estado está y cuándo fue la última actualización — en tiempo real.'
     },
     {
-      title: 'Como Reddit — pero anclado a tu ciudad',
-      desc: 'Reddit tiene comunidades para cada tema. Grego tiene comunidades para cada lugar. La diferencia: aquí tus vecinos son los autores, y lo que publican te afecta directamente.'
+      title: 'Como Shazam frente a Spotify',
+      desc: 'Shazam no reemplaza donde escuchas música. Identifica y te permite llevarla a Youtube o Spotify. Grego no reemplaza los canales que ya usas para comunicarte. Registra el evento y te permite compartirlo por cualquiera de esos canales.'
+    },
+    {
+      title: 'Como Twilio — pero para coordinación de eventos',
+      desc: 'Twilio no es una empresa de llamadas — es una plataforma de comunicación que cualquier producto puede usar. Grego no es una app de serenazgo — es una plataforma de coordinación que cualquier institución o empresa puede configurar para su propio flujo de eventos.'
     },
     {
       title: 'Como Waze — pero para toda la ciudad',
-      desc: 'Waze convierte a millones de conductores en sensores de tráfico sin que ellos lo noten. Grego convierte a los ciudadanos en sensores urbanos.'
+      desc: 'Waze convierte a millones de conductores en sensores de tráfico sin que lo noten. Grego convierte a ciudadanos e instituciones en sensores urbanos. Los eventos que coordinan hoy construyen el mapa de inteligencia de la ciudad de mañana.'
     },
     {
-      title: 'Como WhatsApp — pero organizado por lugar',
-      desc: 'El Lobby de Grego no depende de que alguien lo mantenga vivo — la comunidad lo alimenta naturalmente porque está anclado a un lugar real.'
-    },
-    {
-      title: 'Como Nextdoor — pero para Latinoamérica',
-      desc: 'Grego parte del tejido comunitario latinoamericano: la asociación de comerciantes, la junta vecinal, el grupo del colegio, el gremio.'
+      title: 'Como Nextdoor — pero con modelo de adopción invertido',
+      desc: 'Nextdoor necesitaba masa ciudadana para tener valor. Grego entra por la institución — el ciudadano llega porque la municipalidad o empresa le da un canal oficial. La comunidad es el resultado de la coordinación, no su precondición.'
     }
   ];
 

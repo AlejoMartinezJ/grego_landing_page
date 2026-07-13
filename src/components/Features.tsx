@@ -1,38 +1,38 @@
 import React from 'react';
 import './Features.css';
-import { Map, Layout, MessageSquare, ShoppingBag, ShieldCheck, Link } from 'lucide-react';
+import { Smartphone, Monitor, Navigation, Search, Map, ShieldCheck } from 'lucide-react';
 
 const Features: React.FC = () => {
   const features = [
     {
+      icon: <Smartphone size={24} />,
+      title: 'Reporte ciudadano sin fricción',
+      desc: 'El ciudadano reporta — Grego estructura el evento. Sin instalación, sin cuenta previa, completable en menos de 20 segundos. Accesible por QR, URL o SMS.'
+    },
+    {
+      icon: <Monitor size={24} />,
+      title: 'Panel de coordinación institucional',
+      desc: 'Vista web para operadoras y coordinadores. Alertas en tiempo real, asignación de personal en un clic, historial trazable por evento. El flujo completo de atención digitalizado sin reemplazar los procesos existentes.'
+    },
+    {
+      icon: <Navigation size={24} />,
+      title: 'Vista de campo para el ejecutor',
+      desc: 'Acceso móvil para el personal en campo — sereno, técnico, voluntario. Alerta con ubicación, navegación directa a Google Maps o Waze, formulario para actualizar el evento.'
+    },
+    {
+      icon: <Search size={24} />,
+      title: 'Portal público de seguimiento',
+      desc: 'El ciudadano que reportó puede consultar el estado de su reporte por número de teléfono. Sin app, sin cuenta. Transparencia como diseño, no como promesa.'
+    },
+    {
       icon: <Map size={24} />,
-      title: 'El Punto de interés',
-      desc: 'Cada barrio, mercado o evento tiene su propio punto de interés (o hotspot) — un pin en el mapa con toda su información organizada.'
-    },
-    {
-      icon: <Layout size={24} />,
-      title: 'El Lobby',
-      desc: 'El panel de entrada. Contiene el tablero de anuncios, el mercado local, el mapa de vigilancia y canales enlazados.'
-    },
-    {
-      icon: <MessageSquare size={24} />,
-      title: 'Anuncios',
-      desc: 'El foro de la comunidad. Vecinos e instituciones publican anuncios y noticias enlazables a canales externos.'
-    },
-    {
-      icon: <ShoppingBag size={24} />,
-      title: 'Mercado hiperlocal',
-      desc: 'Tablón de avisos georreferenciado. Vende, compra, dona o busca sin costos de delivery, con vecinos de tu misma zona.'
+      title: 'Hotspot comunitario',
+      desc: 'Cada zona, barrio o evento tiene su propio espacio digital: tablero de anuncios, mercado local, mapa de vigilancia y canales enlazados. La red hiperlocal que emerge cuando la coordinación de eventos genera masa ciudadana.'
     },
     {
       icon: <ShieldCheck size={24} />,
-      title: 'Vigilancia ciudadana',
-      desc: 'Mapa en tiempo real de eventos reportados por ciudadanos con validación cruzada para distinguir lo real del ruido.'
-    },
-    {
-      icon: <Link size={24} />,
-      title: 'Canales',
-      desc: 'Directorio de grupos externos (WhatsApp, Facebook, Discord). Un punto de entrada al ecosistema digital de la comunidad.'
+      title: 'Confirmaciones ponderadas',
+      desc: 'Los reportes ciudadanos se validan por proximidad geográfica. Una confirmación desde 50 metros pesa más que una desde 5 km. El mecanismo que distingue la señal del ruido — y construye el activo de datos de largo plazo.'
     }
   ];
 

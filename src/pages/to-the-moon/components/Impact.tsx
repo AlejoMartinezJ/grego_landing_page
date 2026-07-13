@@ -6,18 +6,18 @@ const Impact: React.FC = () => {
   const impacts = [
     {
       icon: <HeartHandshake size={32} />,
-      title: 'Impacto en coordinación institucional',
-      desc: 'Reducir el tiempo de respuesta a incidencias de 20 a menos de 5 minutos. Digitalizar registros que hoy solo existen en cuadernos físicos. Dar a las municipalidades datos reales sobre lo que ocurre en su territorio.'
+      title: 'Impacto social',
+      desc: 'Reconstruir el tejido comunitario urbano. Reducir el aislamiento social. Activar la ayuda mutua entre vecinos que hoy no se conocen.'
     },
     {
       icon: <Siren size={32} />,
       title: 'Impacto en emergencias',
-      desc: 'Acelerar la respuesta ciudadana ante desastres. Crear una fuente de verdad geolocalizada cuando la información está dispersa entre redes sociales y canales sin estructura. Descentralizar la inteligencia de crisis.'
+      desc: 'Acelerar la respuesta ciudadana ante desastres. Reducir el tiempo entre que ocurre un evento y que los actores relevantes lo saben. Descentralizar la inteligencia de crisis.'
     },
     {
       icon: <Activity size={32} />,
-      title: 'Impacto en tejido comunitario',
-      desc: 'Activar economías hiperlocales. Reconstruir la proximidad entre personas que viven a metros de distancia. Dar a cada comunidad un lugar en el mapa digital.'
+      title: 'Impacto económico',
+      desc: 'Activar economías hiperlocales. Reducir la dependencia de plataformas de delivery centralizadas. Conectar oferta y demanda dentro de la misma comunidad.'
     }
   ];
 
@@ -31,7 +31,7 @@ const Impact: React.FC = () => {
             <span className="stat-number">#2</span>
             <span className="stat-label">
               Latinoamérica es la segunda región más propensa
-              a desastres del mundo con 2,300+ eventos desde los 2000. <br/>
+              a desastres del mundo con 2,300+ eventos desde los 2000
             </span>
             <span className="stat-source"> — Fuente: UNDRR · OCHA, 2024</span>
           </div>
@@ -40,7 +40,7 @@ const Impact: React.FC = () => {
             <span className="stat-number">85%</span>
             <span className="stat-label">
               de la población vive en ciudades, sin una capa
-              digital que conecte sus comunidades. <br/>
+              digital que conecte sus comunidades
             </span>
             <span className="stat-source"> — Fuente: UN Population Division, 2026</span>
           </div>

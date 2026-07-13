@@ -31,6 +31,7 @@ const Footer: React.FC = () => {
                 <a href="https://www.tiktok.com/@grego_app" target="_blank" rel="noopener noreferrer">TikTok</a>
                 <a href="https://www.instagram.com/grego_app/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 <a href="https://www.linkedin.com/company/grego-app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="#">X / Twitter</a>
               </div>
             </div>
           </div>
@@ -39,7 +40,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom">
           <div className="footer-brand">
             <img src="/grego_logo.svg" alt="Grego" className="footer-logo" />
-            <p>Una capa digital donde compartir el estado de los eventos físicos.</p>
+            <p>Una capa viva sobre la ciudad.</p>
           </div>
           <div className="footer-legal">
             <a href="#">Sobre el proyecto</a>
@@ -47,7 +48,7 @@ const Footer: React.FC = () => {
             <a href="#">Política de privacidad</a>
           </div>
           <div className="footer-copy">
-            &copy; 2026 Grego — Lima, Perú.
+            &copy; 2026 Grego — Red Hiperlocal. Lima, Perú.
           </div>
         </div>
       </div>
