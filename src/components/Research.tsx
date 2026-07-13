@@ -1,6 +1,5 @@
 import React from 'react';
 import './Research.css';
-import { ArrowRight } from 'lucide-react';
 
 const Research: React.FC = () => {
   return (
